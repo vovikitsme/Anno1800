@@ -6,58 +6,57 @@
     Title="Farmers">
 
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="20">
+        <VerticalStackLayout Padding="20" Spacing="16">
 
-            <Label FontSize="18" Text="Укажите количество фермеров:" />
-            <Entry
-                Keyboard="Numeric"
-                Placeholder="Например: 100"
-                Text="{Binding FarmersCount}" />
 
-            <HorizontalStackLayout>
-                <CheckBox IsChecked="{Binding IsPlanksAvailable}" VerticalOptions="Center" />
-                <Label Text="Есть доски на острове" VerticalOptions="Center" />
-            </HorizontalStackLayout>
+            <Label FontSize="18" Text="Потребности фермеров:" />
 
-            <Label FontSize="18" Text="Выберите доступные ресурсы:" />
-            <Picker
-                Title="Выберите ресурс"
-                ItemsSource="{Binding AvailableResources}"
-                SelectedItem="{Binding SelectedResource}" />
-
-            <Button Command="{Binding CalculateCommand}" Text="Рассчитать" />
-
-            <Label
-                FontSize="16"
-                Text="{Binding CalculationResult}"
-                TextColor="Black" />
-
-            <!--  Новый блок: вывод потребностей фермеров  -->
-            <Label
-                FontAttributes="Bold"
-                FontSize="20"
-                Text="Потребности фермеров:" />
-
-            <CollectionView ItemsSource="{Binding GroupedFarmerNeeds}">
+            <CollectionView IsGrouped="True" ItemsSource="{Binding GroupedFarmerNeeds}">
                 <CollectionView.GroupHeaderTemplate>
                     <DataTemplate>
                         <Label
-                            Margin="0,10,0,0"
+                            Padding="10,5"
+                            BackgroundColor="#f0f0f0"
                             FontAttributes="Bold"
                             FontSize="18"
-                            Text="{Binding Name}"
-                            TextColor="DarkGreen" />
+                            Text="{Binding Title}"
+                            TextColor="Black" />
                     </DataTemplate>
                 </CollectionView.GroupHeaderTemplate>
 
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame
-                            Margin="0,5"
-                            Padding="10"
-                            BorderColor="LightGray">
+                        <HorizontalStackLayout Padding="5" Spacing="10">
                             <Label FontSize="16" Text="{Binding Name}" />
-                        </Frame>
+                        </HorizontalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+
+
+            <CollectionView ItemsSource="{Binding Needs}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
+                            <Image
+                                Aspect="AspectFit"
+                                HeightRequest="40"
+                                Source="{Binding IconPath}"
+                                WidthRequest="40" />
+
+                            <VerticalStackLayout>
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="16"
+                                    Text="{Binding Name}" />
+
+                                <Label
+                                    FontSize="14"
+                                    Text="{Binding NeedTypeName}"
+                                    TextColor="Gray" />
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>

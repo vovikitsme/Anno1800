@@ -14,9 +14,5 @@ namespace Anno1800.Views
         public BaseViewModel()
         {
         }
-
-
-        [ObservableProperty]
-        private ObservableCollection<Need> needs = new();
     }
 }

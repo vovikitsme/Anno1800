@@ -28,6 +28,9 @@ namespace Anno1800.Views
             LoadNeedsCommand.Execute(null);
         }
 
+        public ObservableCollection<NeedDisplayDto> Needs { get; } = new();
+
+
         public ICommand LoadNeedsCommand { get; }
 
         private async Task LoadNeedsAsync()
@@ -41,13 +44,11 @@ namespace Anno1800.Views
 
             GroupedFarmerNeeds.Clear();
 
-            var farmersClass = await _db.Table<PopulationClass>().FirstOrDefaultAsync(p => p.Name == "Farmers");
+            var farmersClass = await _db.Table<PopulationClass>().Where(p => p.Name == "Farmers").FirstOrDefaultAsync();
             if (farmersClass == null) return;
 
-            // Получаем все нужды фермеров
-            var needs = await _db.Table<Need>()
-                .Where(n => n.PopulationClassId == farmersClass.Id)
-                .ToListAsync();
+            var needs = await _db.Table<Need>().Where(n => n.PopulationClassId == farmersClass.Id).ToListAsync();
+
 
             // Получаем все типы нужд
             var needTypes = await _db.Table<NeedType>().ToListAsync();
@@ -60,6 +61,21 @@ namespace Anno1800.Views
 
             foreach (var group in grouped)
                 GroupedFarmerNeeds.Add(group);
+
+
+            Needs.Clear();
+            foreach (var need in needs)
+            {
+                var type = await _db.FindAsync<NeedType>(need.NeedTypeId);
+
+                Needs.Add(new NeedDisplayDto
+                {
+                    Name = need.Name,
+                    NeedTypeName = type?.Name ?? "?",
+                    IconPath = $"Resources/Images/{need.IconPath}" // или просто: $"{need.IconPath}" если путь уже без папки
+                });
+            }
+
         }
     }
 }
