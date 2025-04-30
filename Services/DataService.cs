@@ -44,7 +44,9 @@ namespace Anno1800.Services
                     IconPath = need.IconPath,
                     NeedTypeName = needType?.Name ?? "?",
                     PopulationClassName = populationClass.Name,
-                    ConsumptionRate = need.ConsumptionRate
+                    ConsumptionRate = need.ConsumptionRate,
+                    ProductionOutputPerDay = need.ProductionOutputPerDay,
+                    ConsumptionPerCapita = need.ConsumptionPerCapita
                 });
             }
 

@@ -42,14 +42,19 @@ namespace Anno1800.Database
             basic = await connection.Table<NeedType>().Where(n => n.Name == "Basic").FirstAsync();
             luxury = await connection.Table<NeedType>().Where(n => n.Name == "Luxury").FirstAsync();
 
+
+            //ProductionOutputPerDay = 2880  // 2 тонны/мин * 60 мин/час * 24 часа
+            //ProductionOutputPerDay = 1440  // 1 тонна/мин * 60 мин/час * 24 часа
+
+
             // Потребности
             var needs = new List<Need>
         {
             // Farmers
-            new Need { Name = "Fish", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , ConsumptionPerCapita = 0.0004166667 , ConsumptionRate =  0.0004166667 , IncomeModifier =  1.25,  UnlockCondition = "Доступно сразу", IconPath = "fish.png"},
-            new Need { Name = "Work Clothes", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , ConsumptionPerCapita = 0.000512821 ,ConsumptionRate =  0.000512821 , IncomeModifier =  3.75,  UnlockCondition = "Доступно сразу", IconPath = "work_clothes.png" },
-            new Need { Name = "Schnapps", PopulationClassId = farmers.Id, NeedTypeId = luxury.Id , ConsumptionPerCapita = 0.000555556 ,ConsumptionRate = 0.000555556 , IncomeModifier =  3.75,  UnlockCondition = "Доступно сразу", IconPath = "schnapps.png" },
-            new Need { Name = "Pub", PopulationClassId = farmers.Id, NeedTypeId = luxury.Id },
+            new Need { Name = "Fish", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , ConsumptionPerCapita = 0.0004166667 , ConsumptionRate =  0.0004166667 , IncomeModifier =  1.25, ProductionOutputPerDay = 2880,  UnlockCondition = "Доступно сразу", IconPath = "fish.png"},
+            new Need { Name = "Work Clothes", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , ConsumptionPerCapita = 0.000512821 ,ConsumptionRate =  0.000512821 , IncomeModifier =  3.75,  ProductionOutputPerDay = 2880, UnlockCondition = "Доступно сразу", IconPath = "work_clothes.png" },
+            new Need { Name = "Schnapps", PopulationClassId = farmers.Id, NeedTypeId = luxury.Id , ConsumptionPerCapita = 0.000555556 ,ConsumptionRate = 0.000555556 , IncomeModifier =  3.75,  ProductionOutputPerDay = 2880, UnlockCondition = "Доступно сразу", IconPath = "schnapps.png" },
+            new Need { Name = "Pub", PopulationClassId = farmers.Id, ProductionOutputPerDay = 1440, NeedTypeId = luxury.Id },
 
             // Workers
             new Need { Name = "Sausages", PopulationClassId = workers.Id, NeedTypeId = basic.Id },

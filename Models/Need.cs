@@ -19,6 +19,7 @@ namespace Anno1800.Models
         public int PopulationClassId { get; set; }        // FK
         public int NeedTypeId { get; set; }               // FK
         public double ConsumptionRate { get; set; } // Новый параметр
+        public double ProductionOutputPerDay { get; set; } // Новое поле
         public string IconPath { get; set; } // Путь к иконке
     }
 }

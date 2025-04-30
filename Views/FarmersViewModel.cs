@@ -53,8 +53,14 @@ namespace Anno1800.Views
 
             foreach (var need in Needs)
             {
-                var productionNeeded = count * need.ConsumptionRate;
-                sb.AppendLine($"{need.Name}: {productionNeeded:0.##} производств");
+                if (need.ConsumptionPerCapita <= 0 || need.ProductionOutputPerDay <= 0) continue;
+
+                double totalConsumption = Convert.ToDouble(FarmersCount) * need.ConsumptionPerCapita;
+                double productionCount = totalConsumption / need.ProductionOutputPerDay;
+
+                string productionText = productionCount < 0.01 ? "< 0.01 производств" : $"{productionCount:F2} производств";
+
+                sb.AppendLine($"{need.Name}: {productionText}");
             }
 
             CalculationResult = sb.ToString();

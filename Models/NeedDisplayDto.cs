@@ -13,6 +13,8 @@ namespace Anno1800.Models
         public string PopulationClassName { get; set; }  // Название класса населения: "Farmers", "Workers" и т.д.
         public string IconPath { get; set; }
         public double ConsumptionRate { get; set; }
+        public double ProductionOutputPerDay { get; set; } // Новое поле
         public int ProductionBuildingsRequired { get; set; }
+        public double ConsumptionPerCapita { get; set; } // как 0.0004166667
     }
 }
