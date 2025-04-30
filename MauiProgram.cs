@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Anno1800.Views;
 using Anno1800.Database;
+using Anno1800.Services;
 
 namespace Anno1800;
 
@@ -27,6 +28,8 @@ public static class MauiProgram
         IServiceCollection services = builder.Services;
 
         services.AddSingleton<SqliteConnectionFactory>();
+
+        services.AddSingleton<DataService>();
 
         services.AddSingleton<MainView>();
         services.AddSingleton<MainViewModel>();

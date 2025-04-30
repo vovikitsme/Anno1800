@@ -1,5 +1,6 @@
 ﻿using Anno1800.Database;
 using Anno1800.Models;
+using Anno1800.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using SQLite;
@@ -13,55 +14,62 @@ using System.Windows.Input;
 
 namespace Anno1800.Views
 {
-    public class FarmersViewModel : BaseViewModel
+    public partial class FarmersViewModel : BaseViewModel
     {
+        private readonly DataService _dataService;
+
         private readonly ISQLiteAsyncConnection _db;
 
-        public ObservableCollection<Need> FarmerNeeds { get; } = new();
+        public ObservableCollection<NeedDisplayDto> Needs { get; } = new();
+        public ObservableCollection<string> AvailableResources { get; } = new();
 
-        public ObservableCollection<NeedGroup> GroupedFarmerNeeds { get; } = new();
 
-        public FarmersViewModel(SqliteConnectionFactory sqliteConnectionFactory)
+        private int _farmersCount;
+        public int FarmersCount
         {
-            _db = sqliteConnectionFactory.Connect();
-            LoadNeedsCommand = new Command(async () => await LoadNeedsAsync());
-            LoadNeedsCommand.Execute(null);
+            get => _farmersCount;
+            set
+            {
+                _farmersCount = value;
+                OnPropertyChanged();
+            }
         }
 
-        public ObservableCollection<NeedDisplayDto> Needs { get; } = new();
-
-
-        public ICommand LoadNeedsCommand { get; }
-
-        private async Task LoadNeedsAsync()
+        public FarmersViewModel(DataService dataService)
         {
+            _dataService = dataService;
+            LoadNeedsAsync();
+        }
 
-           //n.NeedTypeId — внешний ключ.
-
-          //needTypes.FirstOrDefault(nt => nt.Id == n.NeedTypeId)?.Name — находим имя типа.
-
-          //Если вдруг что - то пойдёт не так — будет "Other".
-
-            GroupedFarmerNeeds.Clear();
-
-            var farmersClass = await _db.Table<PopulationClass>().Where(p => p.Name == "Farmers").FirstOrDefaultAsync();
-            if (farmersClass == null) return;
-
-            var needs = await _db.Table<Need>().Where(n => n.PopulationClassId == farmersClass.Id).ToListAsync();
+        private async void LoadNeedsAsync()
+        {
+            var needs = await _dataService.GetNeedsByPopulationClassAsync("Farmers");
 
             Needs.Clear();
             foreach (var need in needs)
             {
-                var needType = await _db.FindAsync<NeedType>(need.NeedTypeId);
-
-                Needs.Add(new NeedDisplayDto
-                {
-                    Name = need.Name,
-                    NeedTypeName = needType?.Name ?? "?",
-                    PopulationClassName = farmersClass.Name,
-                    IconPath = need.IconPath
-                });
+                Needs.Add(need);
             }
+        }
+
+        [RelayCommand]
+        private void Calculate()
+        {
+            if (FarmersCount <= 0 || Needs.Count == 0)
+            {
+                CalculationResult = "Введите количество фермеров.";
+                return;
+            }
+
+            var sb = new StringBuilder();
+
+            foreach (var need in Needs)
+            {
+                var productionNeeded = FarmersCount * need.ConsumptionRate;
+                sb.AppendLine($"{need.Name}: {productionNeeded:0.##} производств");
+            }
+
+            CalculationResult = sb.ToString();
         }
     }
 }

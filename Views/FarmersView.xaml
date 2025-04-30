@@ -6,30 +6,82 @@
     Title="Farmers">
 
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="16">
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="22"
+                HorizontalOptions="Center"
+                Text="Фермеры" />
+
+            <Label FontSize="18" Text="Укажите количество фермеров:" />
+            <Frame
+                Padding="0"
+                BorderColor="LightGray"
+                CornerRadius="10"
+                HasShadow="False">
+                <Entry
+                    FontSize="16"
+                    HeightRequest="50"
+                    Keyboard="Numeric"
+                    Placeholder="Например: 100"
+                    Text="{Binding FarmersCount}" />
+            </Frame>
+
+            <!--  Список потребностей  -->
             <CollectionView ItemsSource="{Binding Needs}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
+                        <Grid
+                            Margin="0,5"
+                            Padding="5"
+                            ColumnDefinitions="Auto,*,Auto">
                             <Image
-                                Aspect="AspectFit"
-                                HeightRequest="40"
+                                HeightRequest="32"
                                 Source="{Binding IconPath}"
-                                WidthRequest="40" />
-                            <VerticalStackLayout>
+                                WidthRequest="32" />
+                            <VerticalStackLayout Grid.Column="1" Padding="10,0">
+                                <Label FontAttributes="Bold" Text="{Binding Name}" />
                                 <Label
-                                    FontAttributes="Bold"
-                                    FontSize="16"
-                                    Text="{Binding Name}" />
-                                <Label
-                                    FontSize="14"
+                                    FontSize="12"
                                     Text="{Binding NeedTypeName}"
                                     TextColor="Gray" />
                             </VerticalStackLayout>
-                        </HorizontalStackLayout>
+                            <Label
+                                Grid.Column="2"
+                                Text="{Binding ConsumptionRate, StringFormat='{}{0:0.##}/чел.'}"
+                                TextColor="DarkGreen"
+                                VerticalOptions="Center" />
+                        </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+
+            <!--  Кнопка  -->
+            <Button
+                Margin="0,10,0,0"
+                BackgroundColor="#5C27FE"
+                Command="{Binding CalculateCommand}"
+                CornerRadius="12"
+                FontSize="18"
+                HeightRequest="55"
+                Text="Рассчитать"
+                TextColor="White">
+                <Button.Shadow>
+                    <Shadow
+                        Brush="Black"
+                        Opacity="0.3"
+                        Radius="10"
+                        Offset="5,5" />
+                </Button.Shadow>
+            </Button>
+
+            <!--  Результат  -->
+            <Label
+                Margin="0,20,0,0"
+                FontSize="16"
+                Text="{Binding CalculationResult}"
+                TextColor="Black" />
         </VerticalStackLayout>
     </ScrollView>
 
