@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Anno1800.Views.NeedsView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Потребности">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+
+            <Label FontSize="18" Text="Выберите класс населения:" />
+
+            <Picker
+                Title="Класс населения"
+                ItemDisplayBinding="{Binding Name}"
+                ItemsSource="{Binding PopulationClasses}"
+                SelectedItem="{Binding SelectedPopulationClass}" />
+
+            <CollectionView ItemsSource="{Binding Needs}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame
+                            Padding="10"
+                            BorderColor="Gray"
+                            CornerRadius="8">
+                            <VerticalStackLayout>
+                                <Label FontAttributes="Bold" Text="{Binding Name}" />
+                                <Label
+                                    FontSize="12"
+                                    Text="{Binding TypeName}"
+                                    TextColor="Gray" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+</ContentPage>

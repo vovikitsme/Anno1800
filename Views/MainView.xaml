@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Anno1800.Views.MainView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Главная">
+
+    <VerticalStackLayout
+        Padding="30"
+        HorizontalOptions="Center"
+        Spacing="20"
+        VerticalOptions="Center">
+
+        <Button
+            x:Name="OldWorldButton"
+            BackgroundColor="#5C27FE"
+            CornerRadius="10"
+            FontSize="20"
+            HeightRequest="70"
+            IsEnabled="{Binding NavigateToFarmersCommand.CanExecute, Mode=OneWay}"
+            Pressed="OldWorldButton_Pressed"
+            Text="Старый Свет"
+            TextColor="White"
+            WidthRequest="250">
+
+            <!--  🔥 Вставляем триггер на нажатие  -->
+            <Button.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#4721C6" />
+                </Trigger>
+            </Button.Triggers>
+
+        </Button>
+
+        <!--  Clicked срабатывает после полного нажатия и отпускания кнопки.  -->
+        <!--  Pressed срабатывает сразу при нажатии — на событие нажатия пальцем или мышью. и команда привязана через Binding  -->
+
+        <Button
+            x:Name="NewWorldButton"
+            BackgroundColor="LightGray"
+            CornerRadius="10"
+            FontSize="20"
+            HeightRequest="70"
+            IsEnabled="False"
+            Text="Новый Свет"
+            TextColor="Black"
+            WidthRequest="250" />
+        <!--  Пока выключен  -->
+
+    </VerticalStackLayout>
+
+</ContentPage>
+
+
+
+
+
+
+
+
+
+

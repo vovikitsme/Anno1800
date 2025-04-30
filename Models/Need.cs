@@ -1,0 +1,24 @@
+﻿using SQLite;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Anno1800.Models
+{
+    public class Need
+    {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+
+        public string Name { get; set; }          // e.g., "Fish", "Work Clothes"
+        public double ConsumptionPerCapita { get; set; } // как 0.0004166667
+        public double IncomeModifier { get; set; }       // e.g., +1.25
+        public string UnlockCondition { get; set; }       // текстовое описание условия
+        public int PopulationClassId { get; set; }        // FK
+        public int NeedTypeId { get; set; }               // FK
+        public double ConsumptionRate { get; set; } // Новый параметр
+        public string IconPath { get; set; } // Путь к иконке
+    }
+}

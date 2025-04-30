@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Anno1800.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Anno1800"
+    xmlns:views="clr-namespace:Anno1800.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Anno1800">
+
+    <TabBar>
+        <Tab Title="Главная">
+            <ShellContent
+                Title="Главная"
+                ContentTemplate="{DataTemplate views:MainView}"
+                Route="MainView"
+                Shell.NavBarIsVisible="False" />
+        </Tab>
+
+        <Tab Title="Farmers">
+            <ShellContent
+                Title="Farmers"
+                ContentTemplate="{DataTemplate views:FarmersView}"
+                Route="FarmersView"
+                Shell.NavBarIsVisible="False" />
+        </Tab>
+
+        <!-- Заглушки под будущее -->
+        <Tab Title="Workers">
+            <ShellContent ContentTemplate="{DataTemplate views:WorkersView}" />
+        </Tab>
+        <Tab Title="Artisans">
+            <ShellContent ContentTemplate="{DataTemplate views:ArtisansView}" />
+        </Tab>
+    </TabBar>
+
+</Shell>
