@@ -13,11 +13,11 @@ namespace Anno1800.Database
         public static async Task SeedDatabaseAsync(SQLiteAsyncConnection connection)
         {
             // Создание таблиц, если ещё не созданы
-            //await connection.DropTableAsync<PopulationClass>();
+            await connection.DropTableAsync<PopulationClass>();
             await connection.CreateTableAsync<PopulationClass>();
-            //await connection.DropTableAsync<NeedType>();
+            await connection.DropTableAsync<NeedType>();
             await connection.CreateTableAsync<NeedType>();
-            //await connection.DropTableAsync<Need>();
+            await connection.DropTableAsync<Need>();
             await connection.CreateTableAsync<Need>();
 
             // Проверим, есть ли уже данные
@@ -46,9 +46,9 @@ namespace Anno1800.Database
             var needs = new List<Need>
         {
             // Farmers
-            new Need { Name = "Fish", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , IconPath = "fish.png"},
-            new Need { Name = "Work Clothes", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , IconPath = "work_clothes.png" },
-            new Need { Name = "Schnapps", PopulationClassId = farmers.Id, NeedTypeId = luxury.Id , IconPath = "schnapps.png" },
+            new Need { Name = "Fish", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , ConsumptionPerCapita = 0.0004166667 , ConsumptionRate =  0.0004166667 , IncomeModifier =  1.25,  UnlockCondition = "Доступно сразу", IconPath = "fish.png"},
+            new Need { Name = "Work Clothes", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , ConsumptionPerCapita = 0.000512821 ,ConsumptionRate =  0.000512821 , IncomeModifier =  3.75,  UnlockCondition = "Доступно сразу", IconPath = "work_clothes.png" },
+            new Need { Name = "Schnapps", PopulationClassId = farmers.Id, NeedTypeId = luxury.Id , ConsumptionPerCapita = 0.000555556 ,ConsumptionRate = 0.000555556 , IncomeModifier =  3.75,  UnlockCondition = "Доступно сразу", IconPath = "schnapps.png" },
             new Need { Name = "Pub", PopulationClassId = farmers.Id, NeedTypeId = luxury.Id },
 
             // Workers

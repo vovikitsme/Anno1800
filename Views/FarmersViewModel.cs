@@ -53,7 +53,6 @@ namespace Anno1800.Views
 
             foreach (var need in Needs)
             {
-                double ddd = need.ConsumptionRate;
                 var productionNeeded = count * need.ConsumptionRate;
                 sb.AppendLine($"{need.Name}: {productionNeeded:0.##} производств");
             }
