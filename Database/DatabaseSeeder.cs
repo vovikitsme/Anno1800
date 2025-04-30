@@ -13,8 +13,11 @@ namespace Anno1800.Database
         public static async Task SeedDatabaseAsync(SQLiteAsyncConnection connection)
         {
             // Создание таблиц, если ещё не созданы
+            //await connection.DropTableAsync<PopulationClass>();
             await connection.CreateTableAsync<PopulationClass>();
+            //await connection.DropTableAsync<NeedType>();
             await connection.CreateTableAsync<NeedType>();
+            //await connection.DropTableAsync<Need>();
             await connection.CreateTableAsync<Need>();
 
             // Проверим, есть ли уже данные
@@ -43,9 +46,9 @@ namespace Anno1800.Database
             var needs = new List<Need>
         {
             // Farmers
-            new Need { Name = "Fish", PopulationClassId = farmers.Id, NeedTypeId = basic.Id },
-            new Need { Name = "Work Clothes", PopulationClassId = farmers.Id, NeedTypeId = basic.Id },
-            new Need { Name = "Schnapps", PopulationClassId = farmers.Id, NeedTypeId = luxury.Id },
+            new Need { Name = "Fish", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , IconPath = "fish.png"},
+            new Need { Name = "Work Clothes", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , IconPath = "work_clothes.png" },
+            new Need { Name = "Schnapps", PopulationClassId = farmers.Id, NeedTypeId = luxury.Id , IconPath = "schnapps.png" },
             new Need { Name = "Pub", PopulationClassId = farmers.Id, NeedTypeId = luxury.Id },
 
             // Workers

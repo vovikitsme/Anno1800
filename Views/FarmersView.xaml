@@ -7,34 +7,6 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="16">
-
-
-            <Label FontSize="18" Text="Потребности фермеров:" />
-
-            <CollectionView IsGrouped="True" ItemsSource="{Binding GroupedFarmerNeeds}">
-                <CollectionView.GroupHeaderTemplate>
-                    <DataTemplate>
-                        <Label
-                            Padding="10,5"
-                            BackgroundColor="#f0f0f0"
-                            FontAttributes="Bold"
-                            FontSize="18"
-                            Text="{Binding Title}"
-                            TextColor="Black" />
-                    </DataTemplate>
-                </CollectionView.GroupHeaderTemplate>
-
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <HorizontalStackLayout Padding="5" Spacing="10">
-                            <Label FontSize="16" Text="{Binding Name}" />
-                        </HorizontalStackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-
-
-
             <CollectionView ItemsSource="{Binding Needs}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
@@ -44,13 +16,11 @@
                                 HeightRequest="40"
                                 Source="{Binding IconPath}"
                                 WidthRequest="40" />
-
                             <VerticalStackLayout>
                                 <Label
                                     FontAttributes="Bold"
                                     FontSize="16"
                                     Text="{Binding Name}" />
-
                                 <Label
                                     FontSize="14"
                                     Text="{Binding NeedTypeName}"
@@ -60,7 +30,6 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-
         </VerticalStackLayout>
     </ScrollView>
 
