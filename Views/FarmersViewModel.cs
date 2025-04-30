@@ -23,18 +23,6 @@ namespace Anno1800.Views
         public ObservableCollection<NeedDisplayDto> Needs { get; } = new();
         public ObservableCollection<string> AvailableResources { get; } = new();
 
-
-        private int _farmersCount;
-        public int FarmersCount
-        {
-            get => _farmersCount;
-            set
-            {
-                _farmersCount = value;
-                OnPropertyChanged();
-            }
-        }
-
         public FarmersViewModel(DataService dataService)
         {
             _dataService = dataService;
@@ -55,9 +43,9 @@ namespace Anno1800.Views
         [RelayCommand]
         private void Calculate()
         {
-            if (FarmersCount <= 0 || Needs.Count == 0)
+            if (!int.TryParse(FarmersCount, out int count) || count <= 0 || Needs.Count == 0)
             {
-                CalculationResult = "Введите количество фермеров.";
+                CalculationResult = "Введите корректное количество фермеров.";
                 return;
             }
 
@@ -65,7 +53,8 @@ namespace Anno1800.Views
 
             foreach (var need in Needs)
             {
-                var productionNeeded = FarmersCount * need.ConsumptionRate;
+                double ddd = need.ConsumptionRate;
+                var productionNeeded = count * need.ConsumptionRate;
                 sb.AppendLine($"{need.Name}: {productionNeeded:0.##} производств");
             }
 
