@@ -38,29 +38,28 @@
                 TextColor="Black" />
 
             <!--  Вывод потребностей с иконками  -->
-            <CollectionView ItemsSource="{Binding Needs}">
+            <CollectionView ItemsSource="{Binding ProductionResults}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Grid
+                        <Frame
+                            Margin="0,5"
                             Padding="10"
-                            ColumnDefinitions="Auto,*"
-                            RowDefinitions="Auto">
-                            <Image
-                                Margin="0,0,10,0"
-                                HeightRequest="40"
-                                Source="{Binding IconPath}"
-                                WidthRequest="40" />
-                            <VerticalStackLayout Grid.Column="1">
-                                <Label
-                                    FontAttributes="Bold"
-                                    FontSize="16"
-                                    Text="{Binding Name}" />
-                                <Label
-                                    FontSize="14"
-                                    Text="{Binding NeedTypeName}"
-                                    TextColor="Gray" />
-                            </VerticalStackLayout>
-                        </Grid>
+                            BackgroundColor="#F5F5F5"
+                            CornerRadius="10">
+                            <HorizontalStackLayout Spacing="15">
+                                <Image
+                                    HeightRequest="32"
+                                    Source="{Binding IconPath}"
+                                    WidthRequest="32" />
+                                <VerticalStackLayout Spacing="4">
+                                    <!--  Покрытие одним производством  -->
+                                    <Label
+                                        FontSize="14"
+                                        Text="{Binding FarmersPerProductionDisplay}"
+                                        TextColor="Gray" />
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </Frame>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>

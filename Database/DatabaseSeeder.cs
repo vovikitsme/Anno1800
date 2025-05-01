@@ -1,10 +1,7 @@
 ﻿using Anno1800.Models;
+using Microsoft.Maui;
 using SQLite;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Anno1800.Database
 {
@@ -47,14 +44,61 @@ namespace Anno1800.Database
             //ProductionOutputPerDay = 1440  // 1 тонна/мин * 60 мин/час * 24 часа
 
 
+            /* Work Clothes
+             Производственная цепочка: Sheep Farm → Weaving Mill
+
+             Время производства: каждая стадия по 30 секунд
+
+             Выход продукции: 1 единица Work Clothes за 30 секунд
+
+             Потребление: 1 единица на 24 минуты на жителя
+
+             Рассчитанные значения:
+
+            ConsumptionPerCapitaPer5Min = 0.2083(1 / 24 * 5)
+
+             ProductionOutputPer5Min = 10(5 минут / 0.5 минуты на единицу)*/
+
+
+
+            /* Schnapps
+             Производственная цепочка: Potato Farm → Schnapps Distillery
+
+             Время производства: каждая стадия по 30 секунд
+
+            Выход продукции: 1 единица Schnapps за 30 секунд
+
+            Потребление: 1 единица на 24 минуты на жителя
+
+             Рассчитанные значения:
+
+            ConsumptionPerCapitaPer5Min = 0.2083
+
+            ProductionOutputPer5Min = 10 */
+
+
+           /* Pub
+             Здание: Pub
+
+            Время обслуживания: 1 единица обслуживания за 60 секунд
+
+             Потребление: 1 единица на 30 минут на жителя
+
+             Рассчитанные значения:
+
+            ConsumptionPerCapitaPer5Min = 0.1667(1 / 30 * 5)
+
+            ProductionOutputPer5Min = 5(5 минут / 1 минута на единицу) */
+
+
             // Потребности
             var needs = new List<Need>
         {
             // Farmers
-            new Need { Name = "Fish", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , ConsumptionPerCapita = 0.0004166667 , ConsumptionRate =  0.0004166667 , IncomeModifier =  1.25, ProductionOutputPerDay = 2880,  UnlockCondition = "Доступно сразу", IconPath = "fish.png"},
-            new Need { Name = "Work Clothes", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , ConsumptionPerCapita = 0.000512821 ,ConsumptionRate =  0.000512821 , IncomeModifier =  3.75,  ProductionOutputPerDay = 2880, UnlockCondition = "Доступно сразу", IconPath = "work_clothes.png" },
-            new Need { Name = "Schnapps", PopulationClassId = farmers.Id, NeedTypeId = luxury.Id , ConsumptionPerCapita = 0.000555556 ,ConsumptionRate = 0.000555556 , IncomeModifier =  3.75,  ProductionOutputPerDay = 2880, UnlockCondition = "Доступно сразу", IconPath = "schnapps.png" },
-            new Need { Name = "Pub", PopulationClassId = farmers.Id, ProductionOutputPerDay = 1440, NeedTypeId = luxury.Id },
+            new Need { Name = "Fish", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , ConsumptionPerCapita = 0.0004166667 , ConsumptionRate =  0.0004166667 , IncomeModifier =  1.25, ProductionOutputPerDay = 2880,  UnlockCondition = "Доступно сразу", IconPath = "fish.png", ConsumptionPerCapitaPer5Min = 0.2083,  ProductionOutputPer5Min = 10},
+            new Need { Name = "Work Clothes", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , ConsumptionPerCapita = 0.000512821 ,ConsumptionRate =  0.000512821 , IncomeModifier =  3.75,  ProductionOutputPerDay = 2880, UnlockCondition = "Доступно сразу", IconPath = "work_clothes.png",ConsumptionPerCapitaPer5Min = 0.2083, ProductionOutputPer5Min = 10 },
+            new Need { Name = "Schnapps", PopulationClassId = farmers.Id, NeedTypeId = luxury.Id , ConsumptionPerCapita = 0.000555556 ,ConsumptionRate = 0.000555556 , IncomeModifier =  3.75,  ProductionOutputPerDay = 2880, UnlockCondition = "Доступно сразу", IconPath = "schnapps.png" , ConsumptionPerCapitaPer5Min = 0.2083 , ProductionOutputPer5Min = 10},
+            new Need { Name = "Pub", PopulationClassId = farmers.Id, ProductionOutputPerDay = 1440, NeedTypeId = luxury.Id,ConsumptionPerCapitaPer5Min = 0.1667, ProductionOutputPer5Min = 5},
 
             // Workers
             new Need { Name = "Sausages", PopulationClassId = workers.Id, NeedTypeId = basic.Id },

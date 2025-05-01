@@ -21,5 +21,8 @@ namespace Anno1800.Models
         public double ConsumptionRate { get; set; } // Новый параметр
         public double ProductionOutputPerDay { get; set; } // Новое поле
         public string IconPath { get; set; } // Путь к иконке
+
+        public double ConsumptionPerCapitaPer5Min { get; set; } // Потребление на человека за 5 минут
+        public double ProductionOutputPer5Min { get; set; }     // Производство за 5 минут
     }
 }

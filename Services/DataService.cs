@@ -46,7 +46,9 @@ namespace Anno1800.Services
                     PopulationClassName = populationClass.Name,
                     ConsumptionRate = need.ConsumptionRate,
                     ProductionOutputPerDay = need.ProductionOutputPerDay,
-                    ConsumptionPerCapita = need.ConsumptionPerCapita
+                    ConsumptionPerCapita = need.ConsumptionPerCapita,
+                    ConsumptionPerCapitaPer5Min = need.ConsumptionPerCapitaPer5Min,
+                    ProductionOutputPer5Min = need.ProductionOutputPer5Min
                 });
             }
 

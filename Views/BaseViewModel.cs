@@ -26,5 +26,6 @@ namespace Anno1800.Views
 
         [ObservableProperty]
         private string calculationResult;
+
     }
 }
