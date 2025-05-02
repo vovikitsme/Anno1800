@@ -5,11 +5,10 @@ public partial class MainView : ContentPage
     private readonly MainViewModel _mainViewModel;
 
     public MainView(MainViewModel mainViewModel)
-	{
-		InitializeComponent();
-		BindingContext = mainViewModel;
+    {
+        InitializeComponent();
+        BindingContext = mainViewModel;
         _mainViewModel = mainViewModel;
-
     }
 
     private async void OldWorldButton_Pressed(object sender, EventArgs e)

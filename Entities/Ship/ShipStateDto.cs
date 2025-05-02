@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Anno1800.Entities.Ship
+﻿namespace Anno1800.Entities.Ship
 {
-   public class ShipStateDto
+    public class ShipStateDto
     {
         public string Name { get; set; } = "Лютик";
         public ShipType Type { get; set; }  // Военный, торговый и т.д.
@@ -15,7 +9,6 @@ namespace Anno1800.Entities.Ship
         public int Speed { get; set; } // Скорость передвижения
         public int CargoCapacity { get; set; } // Вместимость трюма
         public List<Resource> Resources { get; set; } = new(); // Груз
-
 
         // Тип корабля
         public enum ShipType

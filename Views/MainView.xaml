@@ -29,7 +29,6 @@
                     <Setter Property="BackgroundColor" Value="#4721C6" />
                 </Trigger>
             </Button.Triggers>
-
         </Button>
 
         <!--  Clicked срабатывает после полного нажатия и отпускания кнопки.  -->
@@ -46,17 +45,5 @@
             TextColor="Black"
             WidthRequest="250" />
         <!--  Пока выключен  -->
-
     </VerticalStackLayout>
-
 </ContentPage>
-
-
-
-
-
-
-
-
-
-

@@ -1,9 +1,4 @@
 ﻿using SQLite;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Anno1800.Models
 {
@@ -24,5 +19,9 @@ namespace Anno1800.Models
 
         public double ConsumptionPerCapitaPer5Min { get; set; } // Потребление на человека за 5 минут
         public double ProductionOutputPer5Min { get; set; }     // Производство за 5 минут
+
+        public int GainsInhabitants { get; set; }
+        
+        public bool IsPremium { get; set; }
     }
 }

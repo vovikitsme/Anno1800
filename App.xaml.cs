@@ -1,5 +1,4 @@
 ﻿using Anno1800.Database;
-using Anno1800.Models;
 using SQLite;
 
 namespace Anno1800
@@ -7,6 +6,7 @@ namespace Anno1800
     public partial class App : Application
     {
         private readonly SqliteConnectionFactory _sqliteConnectionFactory;
+
         public App(SqliteConnectionFactory sqliteConnectionFactory)
         {
             InitializeComponent();
@@ -22,7 +22,6 @@ namespace Anno1800
             {
                 SQLiteAsyncConnection connection = _sqliteConnectionFactory.Connect();
                 await DatabaseSeeder.SeedDatabaseAsync(connection);
-
             }
             catch (Exception)
             {

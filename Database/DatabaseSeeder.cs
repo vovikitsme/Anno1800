@@ -1,7 +1,5 @@
 ﻿using Anno1800.Models;
-using Microsoft.Maui;
 using SQLite;
-
 
 namespace Anno1800.Database
 {
@@ -40,9 +38,10 @@ namespace Anno1800.Database
             luxury = await connection.Table<NeedType>().Where(n => n.Name == "Luxury").FirstAsync();
 
 
+            #region Объяснения по переменным
+
             //ProductionOutputPerDay = 2880  // 2 тонны/мин * 60 мин/час * 24 часа
             //ProductionOutputPerDay = 1440  // 1 тонна/мин * 60 мин/час * 24 часа
-
 
             /* Work Clothes
              Производственная цепочка: Sheep Farm → Weaving Mill
@@ -59,8 +58,6 @@ namespace Anno1800.Database
 
              ProductionOutputPer5Min = 10(5 минут / 0.5 минуты на единицу)*/
 
-
-
             /* Schnapps
              Производственная цепочка: Potato Farm → Schnapps Distillery
 
@@ -76,31 +73,37 @@ namespace Anno1800.Database
 
             ProductionOutputPer5Min = 10 */
 
+            /* Pub
+              Здание: Pub
 
-           /* Pub
-             Здание: Pub
+             Время обслуживания: 1 единица обслуживания за 60 секунд
 
-            Время обслуживания: 1 единица обслуживания за 60 секунд
+              Потребление: 1 единица на 30 минут на жителя
 
-             Потребление: 1 единица на 30 минут на жителя
+              Рассчитанные значения:
 
-             Рассчитанные значения:
+             ConsumptionPerCapitaPer5Min = 0.1667(1 / 30 * 5)
 
-            ConsumptionPerCapitaPer5Min = 0.1667(1 / 30 * 5)
+             ProductionOutputPer5Min = 5(5 минут / 1 минута на единицу) */
 
-            ProductionOutputPer5Min = 5(5 минут / 1 минута на единицу) */
-
+            #endregion
 
             // Потребности
+
             var needs = new List<Need>
         {
             // Farmers
-            new Need { Name = "Fish", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , ConsumptionPerCapita = 0.0004166667 , ConsumptionRate =  0.0004166667 , IncomeModifier =  1.25, ProductionOutputPerDay = 2880,  UnlockCondition = "Доступно сразу", IconPath = "fish.png", ConsumptionPerCapitaPer5Min = 0.2083,  ProductionOutputPer5Min = 10},
-            new Need { Name = "Work Clothes", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , ConsumptionPerCapita = 0.000512821 ,ConsumptionRate =  0.000512821 , IncomeModifier =  3.75,  ProductionOutputPerDay = 2880, UnlockCondition = "Доступно сразу", IconPath = "work_clothes.png",ConsumptionPerCapitaPer5Min = 0.2083, ProductionOutputPer5Min = 10 },
-            new Need { Name = "Schnapps", PopulationClassId = farmers.Id, NeedTypeId = luxury.Id , ConsumptionPerCapita = 0.000555556 ,ConsumptionRate = 0.000555556 , IncomeModifier =  3.75,  ProductionOutputPerDay = 2880, UnlockCondition = "Доступно сразу", IconPath = "schnapps.png" , ConsumptionPerCapitaPer5Min = 0.2083 , ProductionOutputPer5Min = 10},
-            new Need { Name = "Pub", PopulationClassId = farmers.Id, ProductionOutputPerDay = 1440, NeedTypeId = luxury.Id,ConsumptionPerCapitaPer5Min = 0.1667, ProductionOutputPer5Min = 5},
+            new Need { Name = "Жильё фермеров", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , IconPath = "farmer_residence.png", ConsumptionPerCapitaPer5Min = 0.2083,  ProductionOutputPer5Min = 1, GainsInhabitants = 0 ,IsPremium = false},
+             new Need { Name = "Рынок", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , IconPath = "marketplace.png", ConsumptionPerCapitaPer5Min = 0.2083,  ProductionOutputPer5Min = 1, GainsInhabitants = 5, IsPremium = false},
+            new Need { Name = "Рыб.гавань", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , IconPath = "fish.png", ConsumptionPerCapitaPer5Min = 0.2083,  ProductionOutputPer5Min = 1,IsPremium = false},
+            new Need { Name = "Овцеферма", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , IconPath = "wool.png",ConsumptionPerCapitaPer5Min = 0.2083, ProductionOutputPer5Min = 1,IsPremium = false },
+            new Need { Name = "Ткацкий завод", PopulationClassId = farmers.Id, NeedTypeId = basic.Id , IconPath = "work_clothes.png",ConsumptionPerCapitaPer5Min = 0.2083, ProductionOutputPer5Min = 1,IsPremium = false },
+            new Need { Name = "Картофельное поле", PopulationClassId = farmers.Id, NeedTypeId = luxury.Id , IconPath = "potato.png" , ConsumptionPerCapitaPer5Min = 0.2083 , ProductionOutputPer5Min = 1, IsPremium = true},
+             new Need { Name = "Шнапс завод", PopulationClassId = farmers.Id, NeedTypeId = luxury.Id , IconPath = "schnapps.png" , ConsumptionPerCapitaPer5Min = 0.2083 , ProductionOutputPer5Min = 1, IsPremium = true},
+            new Need { Name = "Паб", PopulationClassId = farmers.Id, NeedTypeId = luxury.Id, IconPath = "pub.png" ,ConsumptionPerCapitaPer5Min = 0.1667, ProductionOutputPer5Min = 1, IsPremium = true},
 
-            // Workers
+
+            // Workersвавававава
             new Need { Name = "Sausages", PopulationClassId = workers.Id, NeedTypeId = basic.Id },
             new Need { Name = "Bread", PopulationClassId = workers.Id, NeedTypeId = basic.Id },
             new Need { Name = "Soap", PopulationClassId = workers.Id, NeedTypeId = basic.Id },

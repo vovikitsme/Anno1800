@@ -33,5 +33,4 @@
             <ShellContent ContentTemplate="{DataTemplate views:ArtisansView}" />
         </Tab>
     </TabBar>
-
 </Shell>

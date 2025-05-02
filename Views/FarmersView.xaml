@@ -8,37 +8,101 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="20">
 
+            <!--  Поле для ввода количества фермеров  -->
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Количество фермеров:" VerticalOptions="Center" />
+                <Entry
+                    Keyboard="Numeric"
+                    Text="{Binding FarmersCount}"
+                    WidthRequest="100" />
+                <Button Command="{Binding CalculateCommand}" Text="Рассчитать" />
+            </HorizontalStackLayout>
+
+            <!--  Базовые потребности  -->
             <Label
                 FontAttributes="Bold"
-                FontSize="22"
-                HorizontalOptions="Center"
-                Text="Фермеры" />
-
-            <Label FontSize="18" Text="Количество фермеров:" />
-            <Entry
-                FontSize="16"
-                HeightRequest="50"
-                Keyboard="Numeric"
-                Placeholder="Например: 100"
-                Text="{Binding FarmersCount}" />
-
-            <Button
-                BackgroundColor="#5C27FE"
-                Command="{Binding CalculateCommand}"
-                CornerRadius="12"
                 FontSize="18"
-                HeightRequest="55"
-                Text="Рассчитать"
-                TextColor="White" />
+                Text="Базовые потребности (100 фермеров)" />
+            <CollectionView ItemsSource="{Binding BasicNeeds}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <!--  Основной элемент  -->
+                            <Frame
+                                Margin="0,5"
+                                Padding="10"
+                                BackgroundColor="#F5F5F5"
+                                CornerRadius="10">
+                                <HorizontalStackLayout Spacing="15">
+                                    <Image
+                                        HeightRequest="32"
+                                        Source="{Binding IconPath}"
+                                        WidthRequest="32" />
+                                    <VerticalStackLayout Spacing="4">
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="16"
+                                            Text="{Binding Name}" />
+                                        <Label FontSize="14" Text="{Binding ProductionCountDisplay}" />
+                                        <Label
+                                            FontSize="14"
+                                            Text="{Binding FarmersPerProductionDisplay}"
+                                            TextColor="Gray" />
+                                    </VerticalStackLayout>
+                                    <!--  Кнопка раскрытия  -->
+                                    <ImageButton
+                                        BackgroundColor="Transparent"
+                                        Command="{Binding BindingContext.ToggleExpandCommand, Source={x:Reference MainPage}}"
+                                        CommandParameter="{Binding}"
+                                        HeightRequest="24"
+                                        Source="expand_arrow.png"
+                                        WidthRequest="24" />
+                                </HorizontalStackLayout>
+                            </Frame>
 
+                            <!--  Вложенные элементы (SubProductions)  -->
+                            <CollectionView IsVisible="{Binding IsExpanded}" ItemsSource="{Binding SubProductions}">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Frame
+                                            Margin="10,0,0,5"
+                                            Padding="8"
+                                            BackgroundColor="#EFEFEF"
+                                            CornerRadius="6">
+                                            <HorizontalStackLayout Spacing="10">
+                                                <Image
+                                                    HeightRequest="24"
+                                                    Source="{Binding IconPath}"
+                                                    WidthRequest="24" />
+                                                <VerticalStackLayout>
+                                                    <Label FontSize="14" Text="{Binding Name}" />
+                                                    <Label
+                                                        FontSize="12"
+                                                        Text="{Binding Info}"
+                                                        TextColor="Gray" />
+                                                </VerticalStackLayout>
+                                            </HorizontalStackLayout>
+                                        </Frame>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!--  Разделитель  -->
+            <BoxView
+                Margin="0,10"
+                HeightRequest="1"
+                Color="Gray" />
+
+            <!--  Премиум потребности  -->
             <Label
-                Margin="0,20,0,0"
-                FontSize="16"
-                Text="{Binding CalculationResult}"
-                TextColor="Black" />
-
-            <!--  Вывод потребностей с иконками  -->
-            <CollectionView ItemsSource="{Binding ProductionResults}">
+                FontAttributes="Bold"
+                FontSize="18"
+                Text="Премиум потребности (150 фермеров)" />
+            <CollectionView ItemsSource="{Binding PremiumNeeds}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame
@@ -52,7 +116,11 @@
                                     Source="{Binding IconPath}"
                                     WidthRequest="32" />
                                 <VerticalStackLayout Spacing="4">
-                                    <!--  Покрытие одним производством  -->
+                                    <Label
+                                        FontAttributes="Bold"
+                                        FontSize="16"
+                                        Text="{Binding Name}" />
+                                    <Label FontSize="14" Text="{Binding ProductionCountDisplay}" />
                                     <Label
                                         FontSize="14"
                                         Text="{Binding FarmersPerProductionDisplay}"
@@ -63,8 +131,6 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>

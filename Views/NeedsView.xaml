@@ -34,8 +34,6 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-
         </VerticalStackLayout>
-
     </ScrollView>
 </ContentPage>

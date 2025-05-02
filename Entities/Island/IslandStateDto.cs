@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Anno1800.Entities.Island
+﻿namespace Anno1800.Entities.Island
 {
-    class IslandStateDto
+    internal class IslandStateDto
     {
     }
 }

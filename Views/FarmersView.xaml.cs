@@ -2,9 +2,9 @@ namespace Anno1800.Views;
 
 public partial class FarmersView : ContentPage
 {
-	public FarmersView(FarmersViewModel farmersViewModel)
-	{
-		InitializeComponent();
+    public FarmersView(FarmersViewModel farmersViewModel)
+    {
+        InitializeComponent();
         BindingContext = farmersViewModel;
     }
 
@@ -17,7 +17,7 @@ public partial class FarmersView : ContentPage
         // Выполняем команду после анимации
         //if (CalculateButton.Command?.CanExecute(null) == true)
         //{
-            //CalculateButton.Command.Execute(null);
+        //CalculateButton.Command.Execute(null);
         //}
     }
 }

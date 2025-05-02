@@ -1,18 +1,11 @@
 ﻿using Anno1800.Database;
 using Anno1800.Models;
 using SQLite;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Anno1800.Services
 {
     public class DataService
     {
-
         private readonly ISQLiteAsyncConnection _db;
 
         public DataService(SqliteConnectionFactory sqliteConnectionFactory)
@@ -46,9 +39,9 @@ namespace Anno1800.Services
                     PopulationClassName = populationClass.Name,
                     ConsumptionRate = need.ConsumptionRate,
                     ProductionOutputPerDay = need.ProductionOutputPerDay,
-                    ConsumptionPerCapita = need.ConsumptionPerCapita,
                     ConsumptionPerCapitaPer5Min = need.ConsumptionPerCapitaPer5Min,
-                    ProductionOutputPer5Min = need.ProductionOutputPer5Min
+                    ProductionOutputPer5Min = need.ProductionOutputPer5Min,
+                    IsPremium = need.IsPremium
                 });
             }
 
