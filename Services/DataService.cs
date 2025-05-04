@@ -1,51 +1,57 @@
-﻿using Anno1800.Database;
-using Anno1800.Models;
+﻿using Anno1800.Models;
 using SQLite;
 
-namespace Anno1800.Services
+namespace Anno1800.Services;
+
+public class DataService
 {
-    public class DataService
+    private readonly SQLiteAsyncConnection _database;
+
+    public DataService(string dbPath)
     {
-        private readonly ISQLiteAsyncConnection _db;
+        _database = new SQLiteAsyncConnection(dbPath);
+        _database.CreateTableAsync<Need>().Wait();
+        _database.CreateTableAsync<SubNeed>().Wait();
+    }
 
-        public DataService(SqliteConnectionFactory sqliteConnectionFactory)
+    // Получить все потребности
+    public async Task<List<Need>> GetAllNeedsAsync()
+    {
+        return await _database.Table<Need>().ToListAsync();
+    }
+
+    // Получить потребности, которые открываются при населении <= заданного значения
+    public async Task<List<Need>> GetNeedsByPopulationAsync(int maxPopulation)
+    {
+        return await _database.Table<Need>()
+            .Where(n => n.UnlockAtPopulation <= maxPopulation)
+            .ToListAsync();
+    }
+
+    // Получить SubNeeds по ID родительской потребности
+    public async Task<List<SubNeed>> GetSubNeedsByParentIdAsync(int parentNeedId)
+    {
+        return await _database.Table<SubNeed>()
+            .Where(sn => sn.ParentNeedId == parentNeedId)
+            .ToListAsync();
+    }
+
+    // Получить все Need с их SubNeed
+    public async Task<List<NeedWithSubNeeds>> GetNeedsWithSubNeedsAsync(int maxPopulation = int.MaxValue)
+    {
+        var needs = await GetNeedsByPopulationAsync(maxPopulation);
+        var result = new List<NeedWithSubNeeds>();
+
+        foreach (var need in needs)
         {
-            _db = sqliteConnectionFactory.Connect();
-        }
-
-        public async Task<List<NeedDisplayDto>> GetNeedsByPopulationClassAsync(string populationClassName)
-        {
-            var populationClass = await _db.Table<PopulationClass>()
-                .FirstOrDefaultAsync(p => p.Name == populationClassName);
-
-            if (populationClass == null)
-                return new List<NeedDisplayDto>();
-
-            var needs = await _db.Table<Need>()
-                .Where(n => n.PopulationClassId == populationClass.Id)
-                .ToListAsync();
-
-            var needDtos = new List<NeedDisplayDto>();
-
-            foreach (var need in needs)
+            var subNeeds = await GetSubNeedsByParentIdAsync(need.Id);
+            result.Add(new NeedWithSubNeeds
             {
-                var needType = await _db.FindAsync<NeedType>(need.NeedTypeId);
-
-                needDtos.Add(new NeedDisplayDto
-                {
-                    Name = need.Name,
-                    IconPath = need.IconPath,
-                    NeedTypeName = needType?.Name ?? "?",
-                    PopulationClassName = populationClass.Name,
-                    ConsumptionRate = need.ConsumptionRate,
-                    ProductionOutputPerDay = need.ProductionOutputPerDay,
-                    ConsumptionPerCapitaPer5Min = need.ConsumptionPerCapitaPer5Min,
-                    ProductionOutputPer5Min = need.ProductionOutputPer5Min,
-                    IsPremium = need.IsPremium
-                });
-            }
-
-            return needDtos;
+                Need = need,
+                SubNeeds = subNeeds
+            });
         }
+
+        return result;
     }
 }

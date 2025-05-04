@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="Anno1800.Views.FarmersView"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Farmers">
+    xmlns:viewmodels="clr-namespace:Anno1800.Views"
+    Title="Фермеры"
+    x:DataType="viewmodels:FarmersViewModel">
 
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="20">
+        <VerticalStackLayout Padding="16" Spacing="12">
 
-            <!--  Поле для ввода количества фермеров  -->
+            <!--  Поле ввода фермеров  -->
             <HorizontalStackLayout Spacing="10">
-                <Label Text="Количество фермеров:" VerticalOptions="Center" />
+                <Label Text="Число фермеров:" VerticalOptions="Center" />
                 <Entry
                     Keyboard="Numeric"
                     Text="{Binding FarmersCount}"
@@ -18,119 +19,103 @@
                 <Button Command="{Binding CalculateCommand}" Text="Рассчитать" />
             </HorizontalStackLayout>
 
-            <!--  Базовые потребности  -->
-            <Label
-                FontAttributes="Bold"
-                FontSize="18"
-                Text="Базовые потребности (100 фермеров)" />
-            <CollectionView ItemsSource="{Binding BasicNeeds}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout>
-                            <!--  Основной элемент  -->
-                            <Frame
-                                Margin="0,5"
-                                Padding="10"
-                                BackgroundColor="#F5F5F5"
-                                CornerRadius="10">
-                                <HorizontalStackLayout Spacing="15">
-                                    <Image
-                                        HeightRequest="32"
-                                        Source="{Binding IconPath}"
-                                        WidthRequest="32" />
-                                    <VerticalStackLayout Spacing="4">
-                                        <Label
-                                            FontAttributes="Bold"
-                                            FontSize="16"
-                                            Text="{Binding Name}" />
-                                        <Label FontSize="14" Text="{Binding ProductionCountDisplay}" />
-                                        <Label
-                                            FontSize="14"
-                                            Text="{Binding FarmersPerProductionDisplay}"
-                                            TextColor="Gray" />
-                                    </VerticalStackLayout>
-                                    <!--  Кнопка раскрытия  -->
-                                    <ImageButton
-                                        BackgroundColor="Transparent"
-                                        Command="{Binding BindingContext.ToggleExpandCommand, Source={x:Reference MainPage}}"
-                                        CommandParameter="{Binding}"
-                                        HeightRequest="24"
-                                        Source="expand_arrow.png"
-                                        WidthRequest="24" />
-                                </HorizontalStackLayout>
-                            </Frame>
+            <!--  Разделитель  -->
+            <BoxView
+                Margin="0,10"
+                BackgroundColor="Gray"
+                HeightRequest="1" />
 
-                            <!--  Вложенные элементы (SubProductions)  -->
-                            <CollectionView IsVisible="{Binding IsExpanded}" ItemsSource="{Binding SubProductions}">
-                                <CollectionView.ItemTemplate>
-                                    <DataTemplate>
-                                        <Frame
-                                            Margin="10,0,0,5"
-                                            Padding="8"
-                                            BackgroundColor="#EFEFEF"
-                                            CornerRadius="6">
-                                            <HorizontalStackLayout Spacing="10">
-                                                <Image
-                                                    HeightRequest="24"
-                                                    Source="{Binding IconPath}"
-                                                    WidthRequest="24" />
-                                                <VerticalStackLayout>
-                                                    <Label FontSize="14" Text="{Binding Name}" />
-                                                    <Label
-                                                        FontSize="12"
-                                                        Text="{Binding Info}"
-                                                        TextColor="Gray" />
-                                                </VerticalStackLayout>
-                                            </HorizontalStackLayout>
-                                        </Frame>
-                                    </DataTemplate>
-                                </CollectionView.ItemTemplate>
-                            </CollectionView>
-                        </StackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+            <!--  Результаты расчёта  -->
+            <Label FontAttributes="Bold" Text="Результат расчёта:" />
+            <Label LineBreakMode="WordWrap" Text="{Binding CalculationResult}" />
 
             <!--  Разделитель  -->
             <BoxView
                 Margin="0,10"
-                HeightRequest="1"
-                Color="Gray" />
+                BackgroundColor="Gray"
+                HeightRequest="1" />
 
-            <!--  Премиум потребности  -->
+            <!--  Базовые потребности  -->
             <Label
                 FontAttributes="Bold"
-                FontSize="18"
-                Text="Премиум потребности (150 фермеров)" />
-            <CollectionView ItemsSource="{Binding PremiumNeeds}">
+                FontSize="Medium"
+                Text="Базовые потребности:" />
+            <CollectionView ItemsSource="{Binding BaseNeeds}">
                 <CollectionView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="models:NeedWithSubNeeds">
                         <Frame
-                            Margin="0,5"
-                            Padding="10"
-                            BackgroundColor="#F5F5F5"
-                            CornerRadius="10">
-                            <HorizontalStackLayout Spacing="15">
-                                <Image
-                                    HeightRequest="32"
-                                    Source="{Binding IconPath}"
-                                    WidthRequest="32" />
-                                <VerticalStackLayout Spacing="4">
-                                    <Label
-                                        FontAttributes="Bold"
-                                        FontSize="16"
-                                        Text="{Binding Name}" />
-                                    <Label FontSize="14" Text="{Binding ProductionCountDisplay}" />
-                                    <Label
-                                        FontSize="14"
-                                        Text="{Binding FarmersPerProductionDisplay}"
-                                        TextColor="Gray" />
-                                </VerticalStackLayout>
-                            </HorizontalStackLayout>
+                            Margin="4"
+                            Padding="8"
+                            BorderColor="LightGray">
+                            <VerticalStackLayout Spacing="4">
+                                <HorizontalStackLayout Spacing="8">
+                                    <Image
+                                        HeightRequest="32"
+                                        Source="{Binding Need.IconPath}"
+                                        WidthRequest="32" />
+                                    <Label FontAttributes="Bold" Text="{Binding Need.Name}" />
+                                </HorizontalStackLayout>
+                                <Label
+                                    FontAttributes="Italic"
+                                    FontSize="Small"
+                                    Text="Потребности:" />
+                                <CollectionView ItemsSource="{Binding SubNeeds}">
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate x:DataType="models:SubNeed">
+                                            <HorizontalStackLayout Spacing="6">
+                                                <Label Text="→" />
+                                                <Label Text="{Binding Name}" />
+                                            </HorizontalStackLayout>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+                            </VerticalStackLayout>
                         </Frame>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+
+            <!--  Премиум потребности  -->
+            <Label
+                Margin="0,10,0,0"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                Text="Премиум потребности:" />
+            <CollectionView ItemsSource="{Binding PremiumNeeds}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:NeedWithSubNeeds">
+                        <Frame
+                            Margin="4"
+                            Padding="8"
+                            BorderColor="LightGray">
+                            <VerticalStackLayout Spacing="4">
+                                <HorizontalStackLayout Spacing="8">
+                                    <Image
+                                        HeightRequest="32"
+                                        Source="{Binding Need.IconPath}"
+                                        WidthRequest="32" />
+                                    <Label FontAttributes="Bold" Text="{Binding Need.Name}" />
+                                </HorizontalStackLayout>
+                                <Label
+                                    FontAttributes="Italic"
+                                    FontSize="Small"
+                                    Text="Потребности:" />
+                                <CollectionView ItemsSource="{Binding SubNeeds}">
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate x:DataType="models:SubNeed">
+                                            <HorizontalStackLayout Spacing="6">
+                                                <Label Text="→" />
+                                                <Label Text="{Binding Name}" />
+                                            </HorizontalStackLayout>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

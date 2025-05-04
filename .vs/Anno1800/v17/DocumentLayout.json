@@ -11,20 +11,76 @@
       "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:views\\farmersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\models\\needdisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:models\\needdisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\models\\needwithsubneeds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:models\\needwithsubneeds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\database\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:database\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\models\\subneed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:models\\subneed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\models\\need.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:models\\need.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\models\\needdisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:models\\needdisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\models\\needtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:models\\needtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\database\\sqliteconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:database\\sqliteconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\models\\productionresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:models\\productionresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\models\\populationclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:models\\populationclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\entities\\ship\\shipstatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:entities\\ship\\shipstatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\entities\\ship\\shipstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:entities\\ship\\shipstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\entities\\traderoute\\traderoutestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:entities\\traderoute\\traderoutestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\entities\\traderoute\\traderoutedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:entities\\traderoute\\traderoutedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\entities\\island\\islandstatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:entities\\island\\islandstatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\entities\\island\\islandstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:entities\\island\\islandstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\views\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -39,44 +95,8 @@
       "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:views\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\models\\productionresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:models\\productionresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\models\\populationclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:models\\populationclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\models\\needtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:models\\needtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\views\\needsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:views\\needsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\entities\\ship\\shipstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:entities\\ship\\shipstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\entities\\ship\\shipstatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:entities\\ship\\shipstatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\entities\\island\\islandstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:entities\\island\\islandstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\entities\\island\\islandstatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:entities\\island\\islandstatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\entities\\traderoute\\traderoutestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:entities\\traderoute\\traderoutestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\entities\\traderoute\\traderoutedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:entities\\traderoute\\traderoutedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\views\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -111,20 +131,8 @@
       "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\views\\needsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:views\\needsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\database\\sqliteconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|solutionrelative:database\\sqliteconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8E83DD9-99DB-431D-9B1B-4E15DFF2D9E6}|Anno1800.csproj|d:\\visual-studio\\windows\\myapp\\wpf\\maui\\game_anno\\anno1800\\views\\needsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -202,31 +210,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PopulationClass.cs",
-              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Models\\PopulationClass.cs",
-              "RelativeDocumentMoniker": "Models\\PopulationClass.cs",
-              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Models\\PopulationClass.cs",
-              "RelativeToolTip": "Models\\PopulationClass.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "NeedWithSubNeeds.cs",
+              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Models\\NeedWithSubNeeds.cs",
+              "RelativeDocumentMoniker": "Models\\NeedWithSubNeeds.cs",
+              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Models\\NeedWithSubNeeds.cs",
+              "RelativeToolTip": "Models\\NeedWithSubNeeds.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:57:30.547Z"
+              "WhenOpened": "2025-05-04T13:45:53.359Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "WorkersView.xaml",
-              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\WorkersView.xaml",
-              "RelativeDocumentMoniker": "Views\\WorkersView.xaml",
-              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\WorkersView.xaml",
-              "RelativeToolTip": "Views\\WorkersView.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-27T15:02:49.407Z"
+              "DocumentIndex": 6,
+              "Title": "SubNeed.cs",
+              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Models\\SubNeed.cs",
+              "RelativeDocumentMoniker": "Models\\SubNeed.cs",
+              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Models\\SubNeed.cs",
+              "RelativeToolTip": "Models\\SubNeed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:42:40.592Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "AppShell.xaml.cs",
@@ -238,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "Building.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Models\\Building.cs",
               "RelativeDocumentMoniker": "Models\\Building.cs",
@@ -250,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
@@ -262,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "MainView.xaml.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\MainView.xaml.cs",
               "RelativeDocumentMoniker": "Views\\MainView.xaml.cs",
@@ -274,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "TradeRouteDto.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Entities\\TradeRoute\\TradeRouteDto.cs",
               "RelativeDocumentMoniker": "Entities\\TradeRoute\\TradeRouteDto.cs",
@@ -286,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "TradeRouteState.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Entities\\TradeRoute\\TradeRouteState.cs",
               "RelativeDocumentMoniker": "Entities\\TradeRoute\\TradeRouteState.cs",
@@ -298,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "IslandStateDto.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Entities\\Island\\IslandStateDto.cs",
               "RelativeDocumentMoniker": "Entities\\Island\\IslandStateDto.cs",
@@ -310,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "IslandState.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Entities\\Island\\IslandState.cs",
               "RelativeDocumentMoniker": "Entities\\Island\\IslandState.cs",
@@ -328,13 +338,13 @@
               "RelativeDocumentMoniker": "Entities\\Ship\\ShipStateDto.cs",
               "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Entities\\Ship\\ShipStateDto.cs",
               "RelativeToolTip": "Entities\\Ship\\ShipStateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T09:01:09.359Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "ShipState.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Entities\\Ship\\ShipState.cs",
               "RelativeDocumentMoniker": "Entities\\Ship\\ShipState.cs",
@@ -346,68 +356,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DatabaseSeeder.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Database\\DatabaseSeeder.cs",
               "RelativeDocumentMoniker": "Database\\DatabaseSeeder.cs",
               "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Database\\DatabaseSeeder.cs",
               "RelativeToolTip": "Database\\DatabaseSeeder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAADWAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwEoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T16:38:14.207Z"
+              "WhenOpened": "2025-04-30T16:38:14.207Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Need.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Models\\Need.cs",
               "RelativeDocumentMoniker": "Models\\Need.cs",
               "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Models\\Need.cs",
               "RelativeToolTip": "Models\\Need.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T10:07:07.448Z"
+              "WhenOpened": "2025-04-29T10:07:07.448Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "DataService.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Services\\DataService.cs",
               "RelativeDocumentMoniker": "Services\\DataService.cs",
               "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Services\\DataService.cs",
               "RelativeToolTip": "Services\\DataService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwB8AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T16:40:55.984Z"
+              "WhenOpened": "2025-04-30T16:40:55.984Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "NeedDisplayDto.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Models\\NeedDisplayDto.cs",
               "RelativeDocumentMoniker": "Models\\NeedDisplayDto.cs",
               "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Models\\NeedDisplayDto.cs",
               "RelativeToolTip": "Models\\NeedDisplayDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T17:40:53.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T17:40:53.695Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 2,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
               "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\MauiProgram.cs",
               "RelativeToolTip": "MauiProgram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T15:24:23.077Z"
+              "WhenOpened": "2025-04-27T15:24:23.077Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "ProductionResultDto.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Models\\ProductionResultDto.cs",
               "RelativeDocumentMoniker": "Models\\ProductionResultDto.cs",
@@ -419,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
               "Title": "BaseViewModel.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\BaseViewModel.cs",
               "RelativeDocumentMoniker": "Views\\BaseViewModel.cs",
@@ -437,7 +450,7 @@
               "RelativeDocumentMoniker": "Views\\FarmersViewModel.cs",
               "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\FarmersViewModel.cs",
               "RelativeToolTip": "Views\\FarmersViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T14:47:28.733Z",
               "EditorCaption": ""
@@ -450,26 +463,26 @@
               "RelativeDocumentMoniker": "Views\\FarmersView.xaml",
               "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\FarmersView.xaml",
               "RelativeToolTip": "Views\\FarmersView.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-27T14:47:06.997Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "Views\\MainViewModel.cs",
-              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\MainViewModel.cs",
-              "RelativeToolTip": "Views\\MainViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T08:45:50.076Z"
+              "WhenOpened": "2025-04-29T11:01:05.401Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "NeedType.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Models\\NeedType.cs",
               "RelativeDocumentMoniker": "Models\\NeedType.cs",
@@ -481,91 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainView.xaml",
-              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\MainView.xaml",
-              "RelativeDocumentMoniker": "Views\\MainView.xaml",
-              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\MainView.xaml",
-              "RelativeToolTip": "Views\\MainView.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-27T08:40:15.369Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "NeedsViewModel.cs",
-              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\NeedsViewModel.cs",
-              "RelativeDocumentMoniker": "Views\\NeedsViewModel.cs",
-              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\NeedsViewModel.cs",
-              "RelativeToolTip": "Views\\NeedsViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBsAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T14:46:01.258Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ArtisansView.xaml",
-              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\ArtisansView.xaml",
-              "RelativeDocumentMoniker": "Views\\ArtisansView.xaml",
-              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\ArtisansView.xaml",
-              "RelativeToolTip": "Views\\ArtisansView.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-27T15:03:17.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "NeedGroup.cs",
-              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\NeedGroup.cs",
-              "RelativeDocumentMoniker": "Views\\NeedGroup.cs",
-              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\NeedGroup.cs",
-              "RelativeToolTip": "Views\\NeedGroup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T14:20:54.271Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-29T11:01:06.715Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "NeedsView.xaml",
-              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\NeedsView.xaml",
-              "RelativeDocumentMoniker": "Views\\NeedsView.xaml",
-              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\NeedsView.xaml",
-              "RelativeToolTip": "Views\\NeedsView.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-29T14:56:32.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:01:05.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 10,
               "Title": "SqliteConnectionFactory.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Database\\SqliteConnectionFactory.cs",
               "RelativeDocumentMoniker": "Database\\SqliteConnectionFactory.cs",
@@ -577,7 +506,115 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "WorkersView.xaml",
+              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\WorkersView.xaml",
+              "RelativeDocumentMoniker": "Views\\WorkersView.xaml",
+              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\WorkersView.xaml",
+              "RelativeToolTip": "Views\\WorkersView.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-27T15:02:49.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PopulationClass.cs",
+              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Models\\PopulationClass.cs",
+              "RelativeDocumentMoniker": "Models\\PopulationClass.cs",
+              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Models\\PopulationClass.cs",
+              "RelativeToolTip": "Models\\PopulationClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T11:57:30.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "Views\\MainViewModel.cs",
+              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\MainViewModel.cs",
+              "RelativeToolTip": "Views\\MainViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T08:45:50.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MainView.xaml",
+              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\MainView.xaml",
+              "RelativeDocumentMoniker": "Views\\MainView.xaml",
+              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\MainView.xaml",
+              "RelativeToolTip": "Views\\MainView.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-27T08:40:15.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "NeedsViewModel.cs",
+              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\NeedsViewModel.cs",
+              "RelativeDocumentMoniker": "Views\\NeedsViewModel.cs",
+              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\NeedsViewModel.cs",
+              "RelativeToolTip": "Views\\NeedsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T14:46:01.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ArtisansView.xaml",
+              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\ArtisansView.xaml",
+              "RelativeDocumentMoniker": "Views\\ArtisansView.xaml",
+              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\ArtisansView.xaml",
+              "RelativeToolTip": "Views\\ArtisansView.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-27T15:03:17.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "NeedGroup.cs",
+              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\NeedGroup.cs",
+              "RelativeDocumentMoniker": "Views\\NeedGroup.cs",
+              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\NeedGroup.cs",
+              "RelativeToolTip": "Views\\NeedGroup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T14:20:54.271Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 31,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-29T11:01:06.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "NeedsView.xaml",
+              "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\NeedsView.xaml",
+              "RelativeDocumentMoniker": "Views\\NeedsView.xaml",
+              "ToolTip": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\NeedsView.xaml",
+              "RelativeToolTip": "Views\\NeedsView.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-29T14:56:32.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "NeedsView.xaml.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\NeedsView.xaml.cs",
               "RelativeDocumentMoniker": "Views\\NeedsView.xaml.cs",
@@ -589,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "FarmersView.xaml.cs",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Views\\FarmersView.xaml.cs",
               "RelativeDocumentMoniker": "Views\\FarmersView.xaml.cs",
@@ -601,7 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "Anno1800.csproj",
               "DocumentMoniker": "D:\\VISUAL-STUDIO\\WINDOWS\\MyApp\\WPF\\MAUI\\GAME_ANNO\\Anno1800\\Anno1800.csproj",
               "RelativeDocumentMoniker": "Anno1800.csproj",

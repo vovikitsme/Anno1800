@@ -19,17 +19,15 @@
 
         public bool IsPremium { get; set; }
 		
-		 public string ProductionCountDisplay => ProductionCount < 0.01 ? "< 0.01 производств" : $"{ProductionCount:F2} производств";
+		 public string ProductionCountDisplay =>
+            ProductionCount < 0.01 ? "< 0.01 производств" : $"{ProductionCount:F2} производств";
 
-        public string FarmersPerProductionDisplay => FarmersPerProduction > 0 ? $"1 производство покрывает: {Math.Floor(FarmersPerProduction):N0} фермеров" : "Недостаточно данных";
+        public string FarmersPerProductionDisplay =>
+            FarmersPerProduction > 0 ? $"1 производство покрывает: {Math.Floor(FarmersPerProduction):N0} фермеров" : "Недостаточно данных";
+
 
         public bool IsExpanded { get; set; }  // для управления раскрытием
-    }
 
-    public class SubProductionDto
-    {
-        public string Name { get; set; }
-        public string IconPath { get; set; }
-        public string Info { get; set; } // дополнительное описание
+        public List<NeedDisplayDto> SubProductions { get; set; } = new();
     }
-}
+    }
