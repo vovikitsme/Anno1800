@@ -21,7 +21,7 @@ namespace Anno1800
             try
             {
                 SQLiteAsyncConnection connection = _sqliteConnectionFactory.Connect();
-                await DatabaseSeeder.SeedDatabaseAsync(connection);
+                await DatabaseSeeder.SeedAsync(connection);
             }
             catch (Exception)
             {

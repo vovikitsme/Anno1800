@@ -36,9 +36,6 @@ public static class MauiProgram
         services.AddSingleton<FarmersView>();
         services.AddSingleton<FarmersViewModel>();
 
-        services.AddSingleton<NeedsView>();
-        services.AddSingleton<NeedsViewModel>();
-
         return builder.Build();
     }
 }
