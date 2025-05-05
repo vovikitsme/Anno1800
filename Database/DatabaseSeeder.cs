@@ -7,7 +7,9 @@ namespace Anno1800.Database
     {
         public static async Task SeedAsync(SQLiteAsyncConnection database)
         {
+            await database.DropTableAsync<Need>();
             await database.CreateTableAsync<Need>();
+            await database.DropTableAsync<SubNeed>();
             await database.CreateTableAsync<SubNeed>();
 
             var needs = new List<Need>

@@ -1,17 +1,17 @@
-﻿using Anno1800.Models;
+﻿using Anno1800.Database;
+using Anno1800.Models;
 using SQLite;
 
 namespace Anno1800.Services;
 
 public class DataService
 {
-    private readonly SQLiteAsyncConnection _database;
+    private readonly ISQLiteAsyncConnection _database;
 
-    public DataService(string dbPath)
+
+    public DataService(SqliteConnectionFactory sqliteConnectionFactory)
     {
-        _database = new SQLiteAsyncConnection(dbPath);
-        _database.CreateTableAsync<Need>().Wait();
-        _database.CreateTableAsync<SubNeed>().Wait();
+        _database = sqliteConnectionFactory.Connect(); ;
     }
 
     // Получить все потребности
